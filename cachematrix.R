@@ -1,18 +1,17 @@
 ## R Programming (Coursera Data Scientist Signature Track)
 ## Jeff Bachovchin
-## 23-01-2015
+## 25-01-2015
 ##
 ## Assignement #2
 
-## Put comments here that give an overall description of what your
-## functions do
-
-## This function creates a special "matrix" object that can cache its inverse.
+## This function creates a special "matrix" object that can cache its inverse. The matrix passed to it is assumed
+## to be invertible and no checks are made to ensure that. Errors will result if an the matrix is non-invertible.
 
 makeCacheMatrix <- function(m = matrix()) {
         ## m is the matrix (assumed to be invertible) passed to makeCacheMatrix
         
-        i <- NULL  ## i = inverse, initialize to NULL
+	## i = inverse, initialize to NULL
+        i <- NULL  
         
         ## sets the values of the matrix (m) to the matrix passed to it, and the inverse (i) initialize to NULL
         set <- function(y) {
